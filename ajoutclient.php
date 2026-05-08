@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 <!DOCTYPE html>
 <html lang="fr">
-<head><meta charset="UTF-8"><title>Ajouter un client</title><link rel="stylesheet" href="style.css"></head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Ajouter un client</title><link rel="stylesheet" href="style.css"></head>
 <body>
     <h2 style="text-align: center; padding: 50px;">Ajouter un client</h2>
 
@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <label>Mail :</label>
         <input type="email" name="mail" required><br><br>
         <button type="submit">Enregistrer</button>
-        <button onclick="window.location.href='accueil.php'">Quitter</button>
+        <button type="button" onclick="window.location.href='accueil.php'">Quitter</button>
     </form>
     <br>
 </body>
