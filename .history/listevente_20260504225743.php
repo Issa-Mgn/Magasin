@@ -18,7 +18,7 @@ $result = $idcom->query("SELECT c.id_comm, c.date, cl.nom, cl.prenom, c.montant
 
 <div class="header">
     <img src="./img/logo_uac.jpg" alt="Logo UAC">
-    <h2>Bienvenue sur ma Plateforme</h2>
+    <h2>Ma Plateforme ENEAM</h2>
     <img src="./img/logo_eneam.jpg" alt="Logo ENEAM">
 </div>
 

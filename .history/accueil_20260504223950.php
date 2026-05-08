@@ -13,7 +13,7 @@ if (!isset($_SESSION['user'])) { header("Location: index.php"); exit(); }
 
 <div class="header">
     <img src="./img/logo_uac.jpg" alt="Logo UAC">
-    <h2>Bienvenue sur ma Plateforme</h2>
+    <h2>Ma Plateforme ENEAM</h2>
     <img src="./img/logo_eneam.jpg" alt="Logo ENEAM">
 </div>
 
