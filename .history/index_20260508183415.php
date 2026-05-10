@@ -3,7 +3,19 @@ session_start();
 include("exemple15-2.php");
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $idcom    = connexobjet("if0_41867433_magasin", "myparam");
+    $idcom    = connexobjet("<?php
+function connexobjet($base, $param)
+{
+    include_once($param.".inc.php");
+    $idcom = new mysqli(HOST, USER, PASS, $base, PORT);
+    if (!$idcom) {
+        echo "<script type=text/javascript>";
+        echo "alert('Connexion impossible à la base')</script>";
+        exit();
+    }
+    return $idcom;
+}
+?>", "myparam");
     $login    = $idcom->real_escape_string($_POST['login']);
     $password = $_POST['password'];
 

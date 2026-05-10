@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $req2 = "INSERT INTO contenir (id_comm, id_article, qte_comm) 
              VALUES ('$id_comm', '$id_article', '$qte')";
 
-    if ($idcom->query($req2)) {             
+    if ($idcom->query($req2)) {
         $success = "Vente enregistrée avec succès !";
     } else {
         $erreur = "Erreur : " . $idcom->error;
@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $idcom->close();
 }
 
-$idcom2   = connexobjet("if0_41867433_magasin", "myparam");
+$idcom2   = connexobjet("essaiBDD", "myparam");
 $clients  = $idcom2->query("SELECT idclient, nom, prenom FROM client");
 $articles = $idcom2->query("SELECT id_article, design FROM article");
 ?>

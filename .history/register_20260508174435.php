@@ -5,7 +5,7 @@ $success = "";
 $erreur  = "";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $idcom    = connexobjet("if0_41867433_magasin", "myparam");
+    $idcom    = connexobjet("essaiBDD", "myparam");
     $nom      = $idcom->real_escape_string($_POST['nom']);
     $prenom   = $idcom->real_escape_string($_POST['prenom']);
     $contact  = $idcom->real_escape_string($_POST['contact']);

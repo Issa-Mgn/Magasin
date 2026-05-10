@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $idcom->close();
 }
 
-$idcom2   = connexobjet("if0_41867433_magasin", "myparam");
+$idcom2   = connexobjet("essaiBDD", "myparam");
 $clients  = $idcom2->query("SELECT idclient, nom, prenom FROM client");
 $articles = $idcom2->query("SELECT id_article, design FROM article");
 ?>

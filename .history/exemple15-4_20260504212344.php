@@ -11,7 +11,7 @@
 <body>
 <?php
 include("exemple15-2.php");
-$idcom = connexobjet("if0_41867433_magasin", "myparam");
+$idcom = connexobjet("essaiBDD", "myparam");
 
 // Insertion si formulaire soumis
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

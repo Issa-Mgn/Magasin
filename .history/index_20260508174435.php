@@ -3,7 +3,7 @@ session_start();
 include("exemple15-2.php");
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $idcom    = connexobjet("if0_41867433_magasin", "myparam");
+    $idcom    = connexobjet("essaiBDD", "myparam");
     $login    = $idcom->real_escape_string($_POST['login']);
     $password = $_POST['password'];
 
